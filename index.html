@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <div id="particles-js"></div>
+    <!-- <div id="particles-js"></div> -->
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -17,12 +17,12 @@
                 </h1>
                 <div class="header-content-right">
                     <nav class="nav">
-                        <a href="#" class="nav-link">セミナー</a>
-                        <a href="#" class="nav-link">相談窓口</a>
-                        <a href="#" class="nav-link">参加企業一覧</a>
-                        <a href="#" class="nav-link">アクセス</a>
+                        <a href="#seminar" class="nav-link">セミナー</a>
+                        <a href="#consultation" class="nav-link">相談窓口</a>
+                        <a href="#companies" class="nav-link">参加企業一覧</a>
+                        <a href="#access" class="nav-link">アクセス</a>
                     </nav>
-                    <button class="inquiry-btn">お問い合わせはこちら</button>
+                    <a class="inquiry-btn" href="https://answer.cci.nagoya/sogyo/?code=365fb353" target="_blank">お申し込みはこちら</a>
                 </div>  
             </div>
         </div>
@@ -53,17 +53,18 @@
                         <img src="./assets/images/hero-elements-02.png" alt="入場無料 9月17日(水) 13:00-17:00">
                     </div>
                     
-                    <button class="hero-cta-button">お申し込みはこちら</button>
+                    <a class="hero-cta-button" href="https://answer.cci.nagoya/sogyo/?code=365fb353" target="_blank">お申し込みはこちら</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Seminar Section -->
-    <section class="seminar">
+    <section class="seminar" id="seminar">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">SEMINAR <span class="section-subtitle">セミナー</span></h2>
+            <div class="section-heading">
+                <h2 class="heading-en">SEMINAR</h2>
+                <p class="heading-jp">セミナー<span class="free-badge">参加無料</span></p>
             </div>
                 
             <div class="featured-seminar">
@@ -138,10 +139,11 @@
     </section>
 
     <!-- Consultation Section -->
-    <section class="consultation">
+    <section class="consultation" id="consultation">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">CONSULTATION<br>COUNTER <span class="section-subtitle">相談窓口</span></h2>
+            <div class="section-heading">
+                <h2 class="heading-en multiline">CONSULTATION<br>COUNTER</h2>
+                <p class="heading-jp">相談窓口</p>
             </div>
 
             <div class="consultation-item is-long">
@@ -175,206 +177,241 @@
         </div>
     </section>
 
-    <!-- Event Info Banner -->
-    <section class="event-banner">
-        <div class="container">
-            <div class="banner-content">
-                <div class="banner-left">
-                    <h3>Pit-Nagoya Market</h3>
-                    <div class="banner-date">2024年1月17日(水)</div>
-                    <div class="banner-time">13:00-17:00</div>
-                    <div class="banner-venue">名古屋国際会議場5階会議室</div>
-                </div>
-                <div class="banner-right">
-                    <button class="banner-btn">事前登録フォーム</button>
+    <!-- CTA Banner -->
+    <section class="cta">
+        <div class="container is-sm">
+            <div class="cta-banner">
+                <div class="cta-content">
+                    <div class="cta-info">
+                        <img src="./assets/images/hero-elements-02.png" alt="入場無料 9月17日(水) 13:00-17:00">
+                    </div>
+                    <div class="cta-button-wrapper">
+                        <a href="https://answer.cci.nagoya/sogyo/?code=365fb353" class="cta-button" target="_blank">お申し込みはこちら</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Companies Section -->
-    <section class="companies">
+    <section class="companies" id="companies">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">COMPANIES & SOLUTIONS</h2>
-                <p class="section-subtitle">参加企業・ソリューション</p>
+            <div class="section-heading">
+                <h2 class="heading-en">COMPANIES & <br>SOLUTIONS</h2>
+                <p class="heading-jp">参加企業一覧</p>
             </div>
             
             <div class="companies-grid">
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社日立システムズ">
+                        <img src="./assets/images/logo-company-01.png" alt="株式会社日立システムズ">
                     </div>
                     <div class="company-info">
                         <h3>株式会社日立システムズ</h3>
-                        <p>最新のITソリューションで<br>企業のDX推進をサポート</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <p>生成AIでビジネスを革新<br>日立システムズのDXソリューション</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.hitachi-systems.com/dx/generative-ai/" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="NTT西日本株式会社">
+                        <img src="./assets/images/logo-company-02.png" alt="NTT西日本株式会社">
                     </div>
                     <div class="company-info">
                         <h3>NTT西日本株式会社</h3>
-                        <p>通信インフラとクラウドサービスで<br>ビジネスを支援</p>
-                        <a href="#" class="company-link">公式サイトへ</a>
+                        <p>①法人向け生成AIサービス<br>②情シスおまかせコンシェルジュ</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://cloud.nttsmc.com/smcgai/" class="company-link" target="_blank">サービス詳細①</a>
+                            <a href="https://business.ntt-west.co.jp/service/maintenance/itconcierge/" class="company-link" target="_blank">サービス詳細②</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社マイクロリンク">
+                        <img src="./assets/images/logo-company-03.png" alt="株式会社マイクロリンク">
                     </div>
                     <div class="company-info">
                         <h3>株式会社マイクロリンク</h3>
-                        <p>中小企業向けITソリューション<br>専門サービス</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <p>①思考をもっと速くする「Microsoft 365 Copilot」<br>②社内情報のチャットボット化で業務をスマートに！「Copilot Studio」</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.microlink.co.jp/" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社管理システム">
+                        <img src="./assets/images/logo-company-04.jpg" alt="株式会社電算システム">
                     </div>
                     <div class="company-info">
-                        <h3>株式会社管理システム</h3>
-                        <p>業務効率化システムの<br>開発・導入支援</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <h3>株式会社電算システム</h3>
+                        <p>法人向け生成AIプラットフォーム<br>「WorqAI for GA」</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.dsk-newtech.com/products/gai.html" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="デジタルプラス株式会社">
+                        <img src="./assets/images/logo-company-05.png" alt="テクノブレイブ株式会社">
                     </div>
                     <div class="company-info">
-                        <h3>デジタルプラス株式会社</h3>
-                        <p>デジタル変革を支援する<br>総合ITサービス</p>
-                        <a href="#" class="company-link">公式サイトへ</a>
+                        <h3>テクノブレイブ株式会社</h3>
+                        <p>①カスタム学習が可能なChatGPT連携<br>チャットボットサービス「InfoCraft」<br>②オールインワンナレッジマネジメントの<br>クラウドサービス「Colletie」</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.tbrave.com/InfoCraft/" class="company-link" target="_blank">サービス詳細①</a>
+                            <a href="https://colletie.com/" class="company-link" target="_blank">サービス詳細②</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社アルタ">
+                        <img src="./assets/images/logo-company-06.png" alt="株式会社アルタ">
                     </div>
                     <div class="company-info">
                         <h3>株式会社アルタ</h3>
-                        <p>クラウドサービスと<br>セキュリティソリューション</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <p>企業向けChatGPTツール「シナプス」</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://pit-n.nagoya-cci.or.jp/activity/activitypost-020250327105411/" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社HANNON">
+                        <img src="./assets/images/logo-company-07.png" alt="株式会社KANNON">
                     </div>
                     <div class="company-info">
-                        <h3>株式会社HANNON</h3>
-                        <p>AI・IoTソリューションで<br>スマートビジネスを実現</p>
-                        <a href="#" class="company-link">公式サイトへ</a>
+                        <h3>株式会社KANNON</h3>
+                        <p>①法人向けのAI検索<br>②社内外の検索業務を可視化するツール<br>「KANNON AI」</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://kan-non.jp/chatgpt" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社テクノ">
+                        <img src="./assets/images/logo-company-08.jpg" alt="株式会社テクノア">
                     </div>
                     <div class="company-info">
-                        <h3>株式会社テクノ</h3>
-                        <p>製造業向けDXソリューション<br>専門サービス</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <h3>株式会社テクノア</h3>
+                        <p>AI類似図面検索</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.techs-s.com/product/ai-ruiji" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="コーエルソリューション株式会社">
+                        <img src="./assets/images/logo-company-09.jpg" alt="コニカミノルタジャパン株式会社">
                     </div>
                     <div class="company-info">
-                        <h3>コーエルソリューション<br>株式会社</h3>
-                        <p>企業向けシステム開発・<br>運用サポート</p>
-                        <a href="#" class="company-link">公式サイトへ</a>
+                        <h3>コニカミノルタジャパン</h3>
+                        <p>COCOMITE (AI搭載オンラインマニュアル)</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://cocomite.konicaminolta.jp/" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社
-                        トライマーケティング">
+                        <img src="./assets/images/logo-company-10.jpg" alt="株式会社トライエッティング">
                     </div>
                     <div class="company-info">
-                        <h3>株式会社<br>トライマーケティング</h3>
-                        <p>デジタルマーケティング<br>支援サービス</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <h3>株式会社<br>トライエッティング</h3>
+                        <p>シフト作成AI「HRBEST(ハーベスト)」</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.tryeting.jp/hrbest/" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社ビジネスコネクト">
+                        <img src="./assets/images/logo-company-11.webp" alt="株式会社ピアコネクト">
                     </div>
                     <div class="company-info">
-                        <h3>株式会社ビジネスコネクト</h3>
-                        <p>ビジネスプロセス最適化<br>コンサルティング</p>
-                        <a href="#" class="company-link">公式サイトへ</a>
+                        <h3>株式会社ピアコネクト</h3>
+                        <p>①kintone<br>②動画作成</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.peer-connect.co.jp/service/package/list" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社コミュニケーション">
+                        <img src="./assets/images/logo-company-12.png" alt="株式会社ユニオンシンク">
                     </div>
                     <div class="company-info">
-                        <h3>株式会社コミュニケーション</h3>
-                        <p>社内コミュニケーション<br>改善ツール</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <h3>株式会社ユニオンシンク</h3>
+                        <p>①文書管理システム<br>「文書デザイナー クラウド」(AI検索)<br>②教育管理システム<br>「教育デザイナー クラウド」</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://pit-n.nagoya-cci.or.jp/activity/activitypost-020250508144448/" class="company-link" target="_blank">サービス詳細①</a>
+                            <a href="https://pit-n.nagoya-cci.or.jp/activity/activitypost-020250604115605/" class="company-link" target="_blank">サービス詳細②</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="Man to Man株式会社">
+                        <img src="./assets/images/logo-company-13.jpg" alt="Man to Man株式会社">
                     </div>
                     <div class="company-info">
                         <h3>Man to Man株式会社</h3>
-                        <p>人材マッチングと<br>業務効率化支援</p>
-                        <a href="#" class="company-link">公式サイトへ</a>
+                        <p>①eee CLOUD 在庫管理システム<br>②RFIDソリューション</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.tbtech.co.jp/solution/business_solution/zaiko.html" class="company-link" target="_blank">サービス詳細①</a>
+                            <a href="https://www.tbtech.co.jp/solution/ai_iot/rfid.html" class="company-link" target="_blank">サービス詳細②</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="ブルーシステムファクトリー株式会社">
+                        <img src="./assets/images/logo-company-14.png" alt="ブルーインフラストラクチャー合同会社">
                     </div>
                     <div class="company-info">
-                        <h3>ブルーシステムファクトリー<br>株式会社</h3>
-                        <p>カスタムシステム開発・<br>保守運用</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <h3>ブルーインフラストラクチャー<br>合同会社</h3>
+                        <p>blueinfra IoT (プラットフォームサービス)</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://infrastructure.blue/service/" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社アールソフトウェア">
+                        <img src="./assets/images/logo-company-15.jpg" alt="株式会社プールソフトウェア">
                     </div>
                     <div class="company-info">
-                        <h3>株式会社<br>アールソフトウェア</h3>
-                        <p>業務システム開発・<br>クラウド移行支援</p>
-                        <a href="#" class="company-link">公式サイトへ</a>
+                        <h3>株式会社プールソフトウェア</h3>
+                        <p>現場仕事シェアプレイス</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.bool.co.jp/service1.html" class="company-link" target="_blank">サービス詳細</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="company-card">
                     <div class="company-logo">
-                        <img src="/placeholder.svg?height=60&width=120" alt="株式会社総合管理システム">
+                        <img src="./assets/images/logo-company-16.jpg" alt="株式会社菱和テレコム">
                     </div>
                     <div class="company-info">
-                        <h3>株式会社総合管理システム</h3>
-                        <p>統合管理システムで<br>業務を一元化</p>
-                        <a href="#" class="company-link">詳細はこちら</a>
+                        <h3>株式会社菱和テレコム</h3>
+                        <p>①業務の効率化に貢献する<br>クラウドサービス「R-zaaS」<br>②楽楽精算</p>
+                        <div class="company-link-wrapper">
+                            <a href="https://www.rakurakuseisan.jp/0002/index.php" class="company-link" target="_blank">サービス詳細①</a>
+                            <a href="https://www.rakurakumeisai.jp/" class="company-link" target="_blank">サービス詳細②</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -382,11 +419,11 @@
     </section>
 
     <!-- Access Section -->
-    <section class="access">
+    <section class="access" id="access">
         <div class="container">
             <div class="access-content">
                 <div class="access-map">
-                    <img src="/placeholder.svg?height=300&width=400" alt="アクセスマップ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.000972522526!2d136.89578397576332!3d35.13164927276964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600379fe92208121%3A0xc830505a7700eaa6!2z5ZCN5Y-k5bGL5Zu96Zqb5Lya6K2w5aC0!5e0!3m2!1sja!2sjp!4v1753890293988!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="access-info">
                     <div class="contact-info">
@@ -398,25 +435,26 @@
                             地下鉄名城線「西高蔵駅」徒歩5分<br>
                             JR東海道本線「熱田駅」徒歩10分</p>
                         </div>
-                        <button class="map-btn">Google Map</button>
+                        <div class="map-btn-warpper">
+                            <a class="map-btn" href="https://maps.app.goo.gl/QJgSWCr374Ywrarp6" target="_blank">Google Map</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Bottom Banner -->
-    <section class="bottom-banner">
-        <div class="container">
-            <div class="banner-content">
-                <div class="banner-left">
-                    <h3>Pit-Nagoya Market</h3>
-                    <div class="banner-date">2024年1月17日(水)</div>
-                    <div class="banner-time">13:00-17:00</div>
-                    <div class="banner-venue">名古屋国際会議場5階会議室</div>
-                </div>
-                <div class="banner-right">
-                    <button class="banner-btn">事前登録フォーム</button>
+    <!-- CTA Banner -->
+    <section class="cta">
+        <div class="container is-sm">
+            <div class="cta-banner">
+                <div class="cta-content">
+                    <div class="cta-info">
+                        <img src="./assets/images/hero-elements-02.png" alt="入場無料 9月17日(水) 13:00-17:00">
+                    </div>
+                    <div class="cta-button-wrapper">
+                        <a href="https://answer.cci.nagoya/sogyo/?code=365fb353" class="cta-button" target="_blank">お申し込みはこちら</a>
+                    </div>
                 </div>
             </div>
         </div>
