@@ -1,0 +1,1 @@
+particlesJS.load('particles-js', 'assets/json/particlesjs-config.json');
