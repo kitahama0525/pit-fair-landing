@@ -967,7 +967,7 @@ img {
 }
 
 .featured-seminar .title {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1e1e3a;
   margin: 0 0 1rem 0;
@@ -993,6 +993,10 @@ img {
 @media (max-width: 768px) {
   .featured-seminar {
     margin-bottom: 1rem;
+  }
+
+  .featured-seminar .info-tags {
+    gap: 0.5rem;
   }
 }
 
@@ -1046,9 +1050,9 @@ img {
   margin-bottom: 0.75rem;
 }
 
-.card-1 .card-title {
+/* .card-1 .card-title {
   font-size: 1.4rem;
-}
+} */
 
 .card-1 .card-title span {
   font-size: 1rem;
